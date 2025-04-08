@@ -1,0 +1,42 @@
+.title {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.links {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.link {
+  width: 100%;
+
+  a {
+    align-items: center;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    padding: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+    &:active {
+      background-color: #4c4c4c;
+    }
+  }
+}
+
+.icon {
+  display: block;
+  height: 16px;
+  width: 16px;
+}

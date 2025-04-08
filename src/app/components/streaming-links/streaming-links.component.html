@@ -1,0 +1,13 @@
+<h3 class="title">Listen on:</h3>
+
+<ul class="links">
+  @for (link of links; track link.name) {
+    <li class="link">
+      <a [href]="link.url" target="_blank">
+        <app-icon class="icon" [name]="link.name" />
+
+        {{ link.title }}
+      </a>
+    </li>
+  }
+</ul>

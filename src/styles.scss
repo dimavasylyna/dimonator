@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@use "app/styles/variables" as var;
+
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  align-items: center;
+  background: var.$bg;
+  color: var.$color;
+  display: flex;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: var.$font-size;
+  justify-content: center;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var.$color;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
