@@ -1,0 +1,63 @@
+@use "../../styles/variables" as var;
+
+.title {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.artist-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.song-item {
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    background-color: #252525;
+    transform: translateY(-5px);
+  }
+
+  a {
+    padding: 20px;
+    align-items: center;
+    color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .listen-button {
+    border-radius: 20px;
+    color: var.$secondColor;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+    width: auto;
+    background-color: var.$accent;
+
+    &:hover {
+      background-color: #1ed760;
+    }
+  }
+}

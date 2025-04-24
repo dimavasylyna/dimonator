@@ -1,0 +1,97 @@
+@use "../../styles/variables" as var;
+
+.upcoming-releases {
+  margin-top: 48px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #1DB954, #19a04a);
+    border-radius: 3px;
+  }
+}
+
+.releases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.release-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    background-color: #252525;
+  }
+}
+
+.release-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.release-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var.$accent;
+}
+
+.release-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.release-date {
+  font-size: 0.875rem;
+  color: #b3b3b3;
+}
+
+.release-description {
+  font-size: 0.875rem;
+  margin: 4px 0 0;
+  color: #e2e2e2;
+}
+
+.release-status {
+  align-self: flex-start;
+}
+
+.coming-soon-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #b91d1d;
+  color: white;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.no-releases {
+  text-align: center;
+  color: #b3b3b3;
+  font-style: italic;
+  padding: 24px 0;
+}

@@ -1,0 +1,26 @@
+<div class="upcoming-releases">
+  <h2 class="section-title">Майбутні релізи</h2>
+  
+  @if (upcomingReleases.length > 0) {
+    <div class="releases-list">
+      @for (release of upcomingReleases; track release.songName) {
+        <div class="release-item">
+          <div class="release-info">
+            <h3 class="release-title">{{ release.songName }}</h3>
+            <div class="release-meta">
+              <span class="release-date">Дата релізу: {{ release.releaseDate }}</span>
+              @if (release.description) {
+                <p class="release-description">{{ release.description }}</p>
+              }
+            </div>
+          </div>
+          <div class="release-status">
+            <span class="coming-soon-badge">Скоро</span>
+          </div>
+        </div>
+      }
+    </div>
+  } @else {
+    <p class="no-releases">Наразі немає запланованих релізів.</p>
+  }
+</div> 

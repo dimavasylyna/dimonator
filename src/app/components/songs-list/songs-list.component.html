@@ -1,0 +1,19 @@
+<h1 class="title">Всі пісні</h1>
+
+<div class="songs-list">
+  @for (song of songs; track song.songName) {
+    <div class="song-item">
+      <a [routerLink]="['/song', song.urlSlug]">
+        <h3>{{ song.songName }}</h3>
+        <div class="listen-button">Слухати</div>
+      </a>
+    </div>
+  }
+</div>
+
+<!-- Компонент майбутніх релізів -->
+<app-upcoming-releases></app-upcoming-releases>
+
+<div class="artist-link">
+  <a class="btn" routerLink="/artist">Хто такий Dimonator</a>
+</div>

@@ -1,3 +1,5 @@
+мені впадло було заморочуватися, зробив через аішку як небудь. Тому тут немає чого лазити в коді видивлятися :)
+
 # Dimonator
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
