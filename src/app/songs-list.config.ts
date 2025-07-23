@@ -15,7 +15,6 @@ export interface SongLink {
   streamingPlatform: StreamingPlatform,
 }
 
-// Інтерфейс для майбутніх релізів
 export interface UpcomingRelease {
   songName: string;
   releaseDate: string; // Формат: "DD.MM.YYYY" або "Q2 2024" тощо
@@ -30,6 +29,32 @@ interface RawSong {
 
 const createSongsList = (): SongView[] => {
   const songs: RawSong[] = [
+    {
+      songName: 'Дім, що чекає...',
+      iframeLink: 'https://open.spotify.com/embed/track/3WPJm0R1nrUS9L2iZ82FKx?utm_source=generator&theme=0',
+      links: [
+        {
+          title: 'Spotify',
+          url: 'https://open.spotify.com/track/3WPJm0R1nrUS9L2iZ82FKx',
+          streamingPlatform: 'spotify'
+        },
+        {
+          title: 'Apple Music',
+          url: 'https://music.apple.com/us/song/%D0%B4%D1%96%D0%BC-%D1%89%D0%BE-%D1%87%D0%B5%D0%BA%D0%B0%D1%94-ost-%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%96%D0%B9-%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B5%D1%86%D1%8C/1809577278',
+          streamingPlatform: 'apple'
+        },
+        {
+          title: 'YouTube',
+          url: 'https://music.youtube.com/watch?v=IVeC68JofZY&si=_buI8hqYhF0dC5fD',
+          streamingPlatform: 'youtube'
+        },
+        {
+          title: 'Amazon',
+          url: 'https://music.amazon.com/tracks/B0F5BFS4SR?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_UMoBWBMCRhMDSLayRasGEIAdU',
+          streamingPlatform: 'amazon'
+        },
+      ]
+    },
     {
       songName: 'Старий друг',
       iframeLink: 'https://open.spotify.com/embed/track/488Wzuhig59SR4SlvQ1lhR?utm_source=generator&theme=0',
@@ -94,8 +119,13 @@ const createSongsList = (): SongView[] => {
 // Список майбутніх релізів
 export const UPCOMING_RELEASES: UpcomingRelease[] = [
   {
-    songName: 'Дім, що чекає...',
-    releaseDate: '19.05.2025',
+    songName: 'Дім, що чекає... (Gothic Metal Version)',
+    releaseDate: '01.08.2025',
+    description: 'Чекайте на всіх стрімінгових платформах'
+  },
+  {
+    songName: 'Між смертю і тобою',
+    releaseDate: '08.08.2025',
     description: 'Чекайте на всіх стрімінгових платформах'
   },
 ];
