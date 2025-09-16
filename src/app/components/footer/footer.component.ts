@@ -18,6 +18,10 @@ export class FooterComponent {
       url: 'https://www.youtube.com/@dimonator_official/'
     },
     {
+      name: 'tiktok',
+      url: 'https://www.tiktok.com/@dimonator_official'
+    },
+    {
       name: 'instagram',
       url: 'https://www.instagram.com/dimonator_official'
     }
